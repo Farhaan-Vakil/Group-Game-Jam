@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/lily.unity
+    guid: 46849a0054479bb499455c10d2500a98
   m_configObjects: {}
