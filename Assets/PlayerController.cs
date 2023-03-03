@@ -76,30 +76,6 @@ public class PlayerController : MonoBehaviour
         scaleChange = new Vector3(-0.01f, -0.01f, -0.01f);
         positionChange = new Vector3(0.0f, -0.005f, 0.0f);
 
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.localScale += scaleChange;
-            transform.position += positionChange;
-
-            if (transform.localScale.y < 0.1f || transform.localScale.y > 1.0f)
-            {
-                scaleChange = -scaleChange;
-                positionChange = -positionChange;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.localScale -= scaleChange;
-            transform.position -= positionChange;
-
-            if (transform.localScale.y < 0.1f || transform.localScale.y > 1.0f)
-            {
-                scaleChange = scaleChange;
-                positionChange = positionChange;
-            }
-        }
-
         if (Input.GetKey(KeyCode.LeftArrow))
             transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
 
