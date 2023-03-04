@@ -21,6 +21,10 @@ public class PlayerController : MonoBehaviour
     public AudioSource walksound;
     public AudioSource jumpsound;
 
+    private void Start()
+    {
+        RenderSettings.skybox.SetColor("_SkyTint", Color.white);
+    }
     void OnCollisionStay()
     {
         isGrounded = true;
@@ -42,7 +46,7 @@ public class PlayerController : MonoBehaviour
                 Physics.gravity = new Vector3(0, 9.8F, 0);
                 transform.rotation = Quaternion.Euler(new Vector3(-180, 0, 0));
                 reverseGravity.Play();
-
+                RenderSettings.skybox.SetColor("_SkyTint", Color.red);
                 //rb.AddForce(-2 * Physics.gravity, ForceMode.Acceleration);
             }
             if (gravity == false)
@@ -50,6 +54,7 @@ public class PlayerController : MonoBehaviour
                 Physics.gravity = new Vector3(0, -9.8F, 0);
                 transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 reverseGravity.Stop();
+                RenderSettings.skybox.SetColor("_SkyTint", Color.white);
             }
         }
 

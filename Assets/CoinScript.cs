@@ -6,7 +6,8 @@ public class CoinScript : MonoBehaviour
 {
     public Vector3 position;
     public Quaternion rotation;
-
+    public AudioSource collect;
+    public AudioSource getAll;
 
     void Start()
     {
@@ -19,8 +20,13 @@ public class CoinScript : MonoBehaviour
 
         if (coll.gameObject.tag == "Player")
         {
-            GameObject.Find("CoinText").GetComponent<CoinsText>().coins++;
             gameObject.SetActive(false);
+            GameObject.Find("CoinText").GetComponent<CoinsText>().coins += 1;
+            collect.Play();
+            if (GameObject.Find("CoinText").GetComponent<CoinsText>().coins > 5)
+            {
+                getAll.Play();
+            }
         }
     }
 }

@@ -12,6 +12,7 @@ public class DeathScript : MonoBehaviour
         if (coll.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(Stage);
+            GameObject.Find("CoinText").GetComponent<CoinsText>().coins = 0;
         }
     }
 }
