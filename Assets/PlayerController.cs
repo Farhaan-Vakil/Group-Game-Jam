@@ -16,6 +16,11 @@ public class PlayerController : MonoBehaviour
     private bool gravity = false;
     public bool isGrounded = false;
 
+    public AudioSource gravityChange;
+    public AudioSource reverseGravity;
+    public AudioSource walksound;
+    public AudioSource jumpsound;
+
     void OnCollisionStay()
     {
         isGrounded = true;
@@ -31,11 +36,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             gravity = !gravity;
-
+            gravityChange.Play();
             if (gravity == true)
             {
                 Physics.gravity = new Vector3(0, 9.8F, 0);
                 transform.rotation = Quaternion.Euler(new Vector3(-180, 0, 0));
+                reverseGravity.Play();
 
                 //rb.AddForce(-2 * Physics.gravity, ForceMode.Acceleration);
             }
@@ -43,11 +49,13 @@ public class PlayerController : MonoBehaviour
             {
                 Physics.gravity = new Vector3(0, -9.8F, 0);
                 transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                reverseGravity.Stop();
             }
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            jumpsound.Play();
             if (gravity == false)
             {
                 rb.AddForce(0, 10f, 0, ForceMode.Impulse);
@@ -72,6 +80,10 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S))
             transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime, Camera.main.transform);
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+            walksound.Play();
+        if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+            walksound.Stop();
 
         scaleChange = new Vector3(-0.01f, -0.01f, -0.01f);
         positionChange = new Vector3(0.0f, -0.005f, 0.0f);
