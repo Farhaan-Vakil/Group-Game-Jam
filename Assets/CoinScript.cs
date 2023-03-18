@@ -20,13 +20,13 @@ public class CoinScript : MonoBehaviour
 
         if (coll.gameObject.tag == "Player")
         {
-            gameObject.SetActive(false);
             GameObject.Find("CoinText").GetComponent<CoinsText>().coins++;
             collect.Play();
             if (GameObject.Find("CoinText").GetComponent<CoinsText>().coins > 5)
             {
                 getAll.Play();
             }
+            gameObject.SetActive(false);
         }
     }
 }

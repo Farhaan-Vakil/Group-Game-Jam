@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5626466, g: 0.6135989, b: 0.5928923, a: 1}
+  m_IndirectSpecularColor: {r: 0.5626466, g: 0.39727783, b: 0.45058364, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -298,7 +298,6 @@ GameObject:
   - component: {fileID: 38709783}
   - component: {fileID: 38709782}
   - component: {fileID: 38709781}
-  - component: {fileID: 38709780}
   - component: {fileID: 38709779}
   - component: {fileID: 38709778}
   m_Layer: 0
@@ -337,19 +336,6 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   collect: {fileID: 156241948}
   getAll: {fileID: 1375300966}
---- !u!135 &38709780
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38709777}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &38709781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -426,7 +412,6 @@ GameObject:
   - component: {fileID: 149297088}
   - component: {fileID: 149297087}
   - component: {fileID: 149297086}
-  - component: {fileID: 149297085}
   - component: {fileID: 149297084}
   - component: {fileID: 149297083}
   m_Layer: 0
@@ -465,19 +450,6 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   collect: {fileID: 156241948}
   getAll: {fileID: 1375300966}
---- !u!135 &149297085
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149297082}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &149297086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2894,7 +2866,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67832
+  m_Name: pb_Mesh23494
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4157,7 +4129,6 @@ GameObject:
   - component: {fileID: 478832946}
   - component: {fileID: 478832945}
   - component: {fileID: 478832944}
-  - component: {fileID: 478832943}
   - component: {fileID: 478832942}
   - component: {fileID: 478832941}
   m_Layer: 0
@@ -4196,19 +4167,6 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   collect: {fileID: 156241948}
   getAll: {fileID: 1375300966}
---- !u!135 &478832943
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478832940}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &478832944
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4867,7 +4825,6 @@ GameObject:
   - component: {fileID: 560699811}
   - component: {fileID: 560699810}
   - component: {fileID: 560699809}
-  - component: {fileID: 560699808}
   - component: {fileID: 560699807}
   - component: {fileID: 560699806}
   m_Layer: 0
@@ -4906,19 +4863,6 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   collect: {fileID: 156241948}
   getAll: {fileID: 1375300966}
---- !u!135 &560699808
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560699805}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &560699809
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7118,7 +7062,6 @@ GameObject:
   - component: {fileID: 801215649}
   - component: {fileID: 801215648}
   - component: {fileID: 801215647}
-  - component: {fileID: 801215646}
   - component: {fileID: 801215645}
   - component: {fileID: 801215644}
   m_Layer: 0
@@ -7157,19 +7100,6 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   collect: {fileID: 156241948}
   getAll: {fileID: 1375300966}
---- !u!135 &801215646
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801215643}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &801215647
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21779,7 +21709,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh62378
+  m_Name: pb_Mesh23616
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22517,7 +22447,6 @@ GameObject:
   - component: {fileID: 1443016564}
   - component: {fileID: 1443016563}
   - component: {fileID: 1443016562}
-  - component: {fileID: 1443016561}
   - component: {fileID: 1443016560}
   - component: {fileID: 1443016559}
   m_Layer: 0
@@ -22556,19 +22485,6 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   collect: {fileID: 156241948}
   getAll: {fileID: 1375300966}
---- !u!135 &1443016561
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443016558}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1443016562
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24088,7 +24004,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61766
+  m_Name: pb_Mesh23194
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25420,7 +25336,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67992
+  m_Name: pb_Mesh23600
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25683,7 +25599,6 @@ GameObject:
   - component: {fileID: 2129677153}
   - component: {fileID: 2129677152}
   - component: {fileID: 2129677151}
-  - component: {fileID: 2129677150}
   - component: {fileID: 2129677149}
   - component: {fileID: 2129677148}
   m_Layer: 0
@@ -25722,19 +25637,6 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   collect: {fileID: 156241948}
   getAll: {fileID: 1375300966}
---- !u!135 &2129677150
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129677147}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2129677151
 MeshRenderer:
   m_ObjectHideFlags: 0
