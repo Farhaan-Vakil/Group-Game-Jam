@@ -32,8 +32,8 @@ public class CoinScript : MonoBehaviour
                     //win
                     GameObject.Find("CoinText").GetComponent<CoinsText>().coins = 0;
                 level += 1;
-                gameObject.SetActive(false);
             }
+            gameObject.SetActive(false);
         }
     }
 }
